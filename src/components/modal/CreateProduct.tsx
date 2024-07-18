@@ -115,8 +115,8 @@ const CreateProduct = () => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button size="sm" className="bg-gray-800 text-gray-400">
-          <PlusIcon className="h-4 w-4 mr-2" />
+        <Button size="sm" className="bg-gray-400 text-black hover:text-white">
+          <PlusIcon className="h-4 w-4 mr-2 hover:text-white" />
           Add Product
         </Button>
       </DialogTrigger>

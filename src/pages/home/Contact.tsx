@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 const Contact = () => {
   return (
-    <div className="bg-gray-950 border-b border-gray-800 text-gray-400 py-24 md:px-0 px-5">
+    <div className="bg-slate-50 border-b border-gray-800 text-black py-24 md:px-0 px-5">
       <Container>
         <motion.div
           variants={fadeIn("up", 0)}
@@ -25,10 +25,10 @@ const Contact = () => {
         >
           <div>
             <div className="flex flex-col items-center">
-              <div className="mb-6 inline-block rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-white">
+              <div className="mb-6 inline-block rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-black">
                 Get in Touch
               </div>
-              <h2 className="mb-4 uppercase text-3xl max-w-2xl text-center font-bold tracking-tight md:text-4xl lg:text-5xl">
+              <h2 className="mb-4 uppercase text-2xl font-serif max-w-2xl text-center font-bold tracking-tight md:text-4xl lg:text-3xl">
                 Connect with Our Sports Experts
               </h2>
               <p className="mb-8 max-w-xl text-muted-foreground md:text-lg text-center">
@@ -38,34 +38,34 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col space-y-6">
-              <div className="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-2xl">
+              <div className="rounded-lg bg-slate-300 p-6 shadow-lg transition-shadow duration-300 hover:shadow-2xl">
                 <div className="mb-4 flex items-center">
-                  <FaPhone className="mr-3 h-6 w-6 text-gray-500" />
-                  <h3 className="text-lg font-bold">Phone</h3>
+                  <FaPhone className="mr-3 h-6 w-6 text-black" />
+                  <h3 className="text-lg font-bold text-black">Phone</h3>
                 </div>
                 <p>+88 01792 344369</p>
               </div>
-              <div className="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-2xl">
+              <div className="rounded-lg bg-slate-300 p-6 shadow-lg transition-shadow duration-300 hover:shadow-2xl">
                 <div className="mb-4 flex items-center">
-                  <MdEmail className="mr-3 h-6 w-6 text-gray-500" />
+                  <MdEmail className="mr-3 h-6 w-6 text-black" />
                   <h3>Email</h3>
                 </div>
                 <h3>alimohammadjhd@gmai.com</h3>
               </div>
-              <div className="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-2xl">
+              <div className="rounded-lg bg-slate-300 p-6 shadow-lg transition-shadow duration-300 hover:shadow-2xl">
                 <div className="mb-4 flex items-center">
-                  <IoShareSocial className="mr-3 h-6 w-6 text-gray-500" />
+                  <IoShareSocial className="mr-3 h-6 w-6 text-black" />
                   <h3>Phone</h3>
                 </div>
-                <div className="flex">
+                <div className="flex text-black">
                   <Link to="/">
-                    <FaFacebookSquare className="mr-3 h-6 w-6 text-gray-500" />
+                    <FaFacebookSquare className="mr-3 h-6 w-6 " />
                   </Link>
                   <Link to="/">
-                    <FaInstagramSquare className="mr-3 h-6 w-6 text-gray-500" />
+                    <FaInstagramSquare className="mr-3 h-6 w-6" />
                   </Link>
                   <Link to="/">
-                    <FaTwitter className="mr-3 h-6 w-6 text-gray-500" />
+                    <FaTwitter className="mr-3 h-6 w-6 " />
                   </Link>
                 </div>
               </div>
@@ -74,7 +74,7 @@ const Contact = () => {
 
           {/* contact form */}
           <div>
-            <div className="rounded-lg border border-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-2xl">
+            <div className="rounded-lg border bg-gray-200 border-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-2xl">
               <h3 className="mb-4 text-lg font-bold">Contact Us</h3>
               <form>
                 <div className="mb-4">
@@ -83,7 +83,7 @@ const Contact = () => {
                     id="name"
                     type="text"
                     placeholder="Enter your name"
-                    className="bg-gray-900 text-gray-300 placeholder-gray-500 outline-none border-gray-800"
+                    className="bg-white text-black placeholder-gray-200 mt-2"
                   />
                 </div>
                 <div className="mb-4">
@@ -92,7 +92,7 @@ const Contact = () => {
                     id="email"
                     type="email"
                     placeholder="Enter your email"
-                    className="bg-gray-900 text-gray-300 placeholder-gray-500 outline-none border-gray-800"
+                    className="bg-white text-black placeholder-gray-200 mt-2"
                   />
                 </div>
                 <div className="mb-4">
@@ -101,7 +101,7 @@ const Contact = () => {
                     id="message"
                     rows={15}
                     placeholder="Enter your message"
-                    className="bg-gray-900 text-gray-300 placeholder-gray-500 outline-none border-gray-800"
+                    className="bg-white text-black placeholder-gray-200 mt-2"
                   />
                 </div>
                 <Button

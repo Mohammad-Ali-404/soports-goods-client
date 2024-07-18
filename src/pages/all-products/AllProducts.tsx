@@ -121,7 +121,7 @@ const AllProducts = () => {
   };
 
   return (
-    <div className=" px-4 md:px-6 py-8 bg-gray-300 text-black">
+    <div className=" px-4 md:px-6 py-8 bg-gray-200 text-black">
       <Container>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
           <h1 className="text-2xl font-bold">Sports Goods</h1>
@@ -137,7 +137,7 @@ const AllProducts = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-[240px_1fr] gap-8">
-          <div className="bg-gray-400 rounded-md shadow-sm p-4">
+          <div className="bg-white rounded-md shadow-sm p-4">
             <h2 className="text-lg font-semibold mb-4">Filters</h2>
             <div className="grid gap-4">
               <div>
@@ -296,24 +296,21 @@ const AllProducts = () => {
                   ))}
                 </div>
               </div>
-              <Button
+              <button
                 onClick={handleClearFilters}
-                className="bg-gray-700 text-white"
+                className="bg-transparent hover:bg-slate-100 border border-black font-semibold text-black py-2 px-1 "
               >
                 Clear Filters
-              </Button>
+              </button>
             </div>
           </div>
           <div>
             <div className="flex items-center justify-between mb-4">
               <DropdownMenu>
-                <DropdownMenuTrigger
-                  className="bg-gray-800 border-gray-700 text-white hover:bg-gray-800 hover:text-gray-400"
-                  asChild
-                >
+                <DropdownMenuTrigger className="" asChild>
                   <Button
                     variant="outline"
-                    className="gap-2 border-gray-700 text-white"
+                    className="gap-2 border-gray-200 text-black"
                   >
                     <ListOrderedIcon className="w-4 h-4" />
                     Sort by Price
@@ -326,12 +323,12 @@ const AllProducts = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
                   align="end"
-                  className="bg-gray-800 border-gray-700 text-white "
+                  className="bg-gray-100 border-gray-700 text-black "
                 >
                   <DropdownMenuRadioGroup
                     value={sortOrder}
                     onValueChange={handleSortOrder}
-                    className="hover:bg-gray-800"
+                    className="hover:bg-gray-300"
                   >
                     <DropdownMenuRadioItem value="asc">
                       Price: Low to High

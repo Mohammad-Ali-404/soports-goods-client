@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/variants";
 const Category = () => {
   return (
-    <div className="bg-gray-900 pt-16 py-24 md:px-0 px-5">
+    <div className="bg-gray-300 pt-16 py-24 md:px-0 px-5">
       <Container>
         <motion.div
           variants={fadeIn("up", 0)}
@@ -22,10 +22,10 @@ const Category = () => {
           className="flex flex-col items-center justify-center space-y-6 pb-10"
         >
           <div className="space-y-2 text-center">
-            <h2 className="text-3xl text-gray-400 font-bold tracking-tight sm:text-4xl uppercase">
+            <h2 className="text-3xl text-black font-serif font-bold tracking-tight sm:text-4xl uppercase">
               Explore Our Sports Categories
             </h2>
-            <p className="text-muted-foreground text-center">
+            <p className="text-black font-normal text-center">
               Find the perfect gear for your favorite sports and activities.
             </p>
           </div>
@@ -41,21 +41,21 @@ const Category = () => {
           <Link
             to={"/all-products"}
             state={{ category: "Running Shoes" }}
-            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-gray-800 p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
+            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-white p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
           >
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-gray-400 transition-all group-hover:bg-gray-700 group-hover:text-gray-200">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-300 text-black transition-all group-hover:bg-gray-200 group-hover:text-black">
               <Footprints className="h-8 w-8" />
             </div>
-            <h3 className="text-lg font-semibold tracking-tight text-gray-400">
+            <h3 className="text-lg font-semibold tracking-tight text-black">
               Running Shoes
             </h3>
           </Link>
           <Link
             to={"/all-products"}
             state={{ category: "Athletic Apparel" }}
-            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-gray-800 p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
+            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-white p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
           >
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-gray-400 transition-all group-hover:bg-gray-700 group-hover:text-gray-200">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-300 text-black transition-all group-hover:bg-gray-200 group-hover:text-black">
               <BicepsFlexed className="h-8 w-8" />
             </div>
             <h3 className="text-lg font-semibold tracking-tight text-gray-400">
@@ -65,9 +65,9 @@ const Category = () => {
           <Link
             to={"/all-products"}
             state={{ category: "Fitness Equipment" }}
-            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-gray-800 p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
+            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-white p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
           >
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-gray-400 transition-all group-hover:bg-gray-700 group-hover:text-gray-200">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-300 text-black transition-all group-hover:bg-gray-200 group-hover:text-black">
               <ShieldPlus className="h-8 w-8" />
             </div>
             <h3 className="text-lg font-semibold tracking-tight text-gray-400">
@@ -77,9 +77,9 @@ const Category = () => {
           <Link
             to={"/all-products"}
             state={{ category: "Outdoor Gear" }}
-            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-gray-800 p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
+            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-white p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
           >
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-gray-400 transition-all group-hover:bg-gray-700 group-hover:text-gray-200">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-300 text-black transition-all group-hover:bg-gray-200 group-hover:text-black">
               <Cog className="h-8 w-8" />
             </div>
             <h3 className="text-lg font-semibold tracking-tight text-gray-400">
@@ -89,9 +89,9 @@ const Category = () => {
           <Link
             to={"/all-products"}
             state={{ category: "Team Sports" }}
-            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-gray-800 p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
+            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-white p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
           >
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-gray-400 transition-all group-hover:bg-gray-700 group-hover:text-gray-200">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-300 text-black transition-all group-hover:bg-gray-200 group-hover:text-black">
               <Trophy className="h-8 w-8" />
             </div>
             <h3 className="text-lg font-semibold tracking-tight text-gray-400">
@@ -101,9 +101,9 @@ const Category = () => {
           <Link
             to={"/all-products"}
             state={{ category: "Hiking and Camping" }}
-            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-gray-800 p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
+            className="group relative flex flex-col items-center justify-center gap-2 rounded-lg bg-white p-6 transition-all hover:-translate-y-2 hover:shadow-lg"
           >
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-gray-400 transition-all group-hover:bg-gray-700 group-hover:text-gray-200">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-slate-300 text-black transition-all group-hover:bg-gray-200 group-hover:text-black">
               <TentTree className="h-8 w-8" />
             </div>
             <h3 className="text-lg font-semibold tracking-tight text-gray-400">

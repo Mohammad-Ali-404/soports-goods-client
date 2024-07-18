@@ -54,8 +54,11 @@ const SingleProduct = () => {
   };
 
   const getSetRating = async (rate: number) => {
-    const res = await updateRating({ id: _id, data: { rating: rate } }).unwrap();
-    
+    const res = await updateRating({
+      id: _id,
+      data: { rating: rate },
+    }).unwrap();
+
     if (res.success) {
       toast({
         variant: "default",
@@ -67,35 +70,35 @@ const SingleProduct = () => {
   const formatRating = Number(rating.toFixed(1));
 
   return (
-    <div className="bg-gray-900 min-h-[calc(100vh-272px)]">
+    <div className="bg-slate-300 min-h-[calc(100vh-272px)] py-10 text-black">
       <Container>
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-12 items-start  px-4 mx-auto py-6  bg-gray-900">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-12 items-start  px-4 mx-auto py-6  bg-[#ffffff] rounded">
           <div>
             <img
               src={image}
               alt="Product Image"
               width={800}
               height={600}
-              className="w-full rounded-lg overflow-hidden aspect-[4/3] object-cover"
+              className="w-full rounded-sm overflow-hidden aspect-[4/3] object-cover"
             />
           </div>
           <div className="grid gap-6 md:gap-10">
             <div>
               <div className="flex items-center gap-2">
-                <span className="inline-block rounded-full bg-red-500 capitalize px-3 py-1 text-xs font-medium text-primary-foreground">
+                <span className="inline-block rounded-full bg-slate-300 capitalize px-3 py-1 text-xs font-medium text-black">
                   Category: {category}
                 </span>
-                <span className="inline-block rounded-full bg-red-500 capitalize px-3 py-1 text-xs font-medium text-primary-foreground">
+                <span className="inline-block rounded-full bg-slate-300 capitalize px-3 py-1 text-xs font-medium text-black">
                   Brand: {brand}
                 </span>
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold text-white">
+              <h1 className="text-2xl md:text-3xl font-bold black pt-5">
                 {name}
               </h1>
             </div>
-            <div className="grid gap-4 text-gray-400">
+            <div className="grid gap-4 text-black">
               <p>{description}</p>
-              <div className="flex items-center gap-4">
+              <div className="flex justify-items-center gap-4 ">
                 <Rating
                   onChange={(rate) => getSetRating(rate)}
                   initialRating={rating}
@@ -120,7 +123,7 @@ const SingleProduct = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className="size-6 text-gray-400"
+                      className="size-6 text-red-500"
                     >
                       <path
                         fillRule="evenodd"
@@ -130,20 +133,20 @@ const SingleProduct = () => {
                     </svg>
                   }
                 />
-                <span className="text-white">{formatRating}</span>
+                <span className="text-black text-lg">{formatRating}</span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="font-medium text-white">In Stock:</span>
-                <span className="text-white">{stockQuantity}</span>
+                <span className="font-medium text-black">In Stock:</span>
+                <span className="text-black">{stockQuantity}</span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="font-medium text-white">Price:</span>
-                <span className="text-4xl font-bold text-white">${price}</span>
+                <span className="font-medium text-black">Price:</span>
+                <span className="text-2xl font-bold text-black">${price}</span>
               </div>
               <Button
                 onClick={addToCart}
                 size="lg"
-                className="w-full bg-red-500 hover:bg-red-600 text-primary-foreground"
+                className="w-full bg-green-700 hover:bg-green-600 text-primary-foreground"
               >
                 Add to Cart
               </Button>

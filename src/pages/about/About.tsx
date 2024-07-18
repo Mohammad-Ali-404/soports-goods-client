@@ -13,7 +13,7 @@ import shop3 from "../../assets/shop3.jpeg";
 import shop4 from "../../assets/shop4.jpeg";
 const About = () => {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-gray-900 text-gray-100">
+    <div className="flex flex-col min-h-[100dvh] bg-gray-200 text-black">
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
@@ -48,7 +48,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-50">
           <div className="container px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
               <div>
@@ -140,12 +140,12 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-300">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Meet Our Team
             </h2>
-            <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
+            <p className="mt-4 max-w-[700px] md:text-xl">
               Our dedicated team of sports enthusiasts and industry experts are
               the driving force behind Sport Haven. Get to know the individuals
               who are committed to delivering the best products and services to
@@ -164,9 +164,9 @@ const About = () => {
                 </Avatar>
                 <div className="text-center">
                   <h3 className="text-lg font-medium">Mohammad Ali</h3>
-                  <p className="text-muted-foreground">CEO</p>
-                  <p className="text-sm text-muted-foreground">
-                    John is the visionary behind Acme Sports, leading the
+                  <p className="font-light">CEO</p>
+                  <p className="text-sm font-sans">
+                    Mohammad is the visionary behind Acme Sports, leading the
                     company with his passion for sports and unwavering
                     commitment to excellence.
                   </p>
@@ -184,8 +184,8 @@ const About = () => {
                 </Avatar>
                 <div className="text-center">
                   <h3 className="text-lg font-medium">Jane Smith</h3>
-                  <p className="text-muted-foreground">COO</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="font-normal">COO</p>
+                  <p className="text-sm font-sans">
                     Jane oversees the day-to-day operations of Acme Sports,
                     ensuring seamless execution and exceptional customer
                     service.
@@ -204,8 +204,8 @@ const About = () => {
                 </Avatar>
                 <div className="text-center">
                   <h3 className="text-lg font-medium">Michael Johnson</h3>
-                  <p className="text-muted-foreground">Head of Product</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="font-light">Head of Product</p>
+                  <p className="text-sm font-sans">
                     Michael leads the product development team, driving
                     innovation and ensuring our products meet the highest
                     standards of quality and performance.
@@ -224,8 +224,8 @@ const About = () => {
                 </Avatar>
                 <div className="text-center">
                   <h3 className="text-lg font-medium">Emily Davis</h3>
-                  <p className="text-muted-foreground">Head of Marketing</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="font-light">Head of Marketing</p>
+                  <p className="text-sm font-sans">
                     Emily leads our marketing efforts, ensuring that our brand
                     and products are effectively communicated to our customers.
                   </p>
@@ -255,7 +255,7 @@ const About = () => {
                 <div className="text-center">
                   <h3 className="text-lg font-medium">Store Location 1</h3>
                   <p className="text-muted-foreground">
-                    123 Main Street, Barishal Bangladesh
+                    Jhenaidah Sadar, jhenaidah
                   </p>
                 </div>
               </div>
@@ -269,9 +269,7 @@ const About = () => {
                 />
                 <div className="text-center">
                   <h3 className="text-lg font-medium">Store Location 2</h3>
-                  <p className="text-muted-foreground">
-                    456 Oak Avenue, Another City
-                  </p>
+                  <p className="text-muted-foreground">456 New York, Us</p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4">
@@ -284,9 +282,7 @@ const About = () => {
                 />
                 <div className="text-center">
                   <h3 className="text-lg font-medium">Store Location 3</h3>
-                  <p className="text-muted-foreground">
-                    789 Elm Street, Another Town
-                  </p>
+                  <p className="text-muted-foreground">789 london</p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4">
@@ -299,9 +295,7 @@ const About = () => {
                 />
                 <div className="text-center">
                   <h3 className="text-lg font-medium">Store Location 4</h3>
-                  <p className="text-muted-foreground">
-                    101 Pine Street, Another City
-                  </p>
+                  <p className="text-muted-foreground">101 paris</p>
                 </div>
               </div>
             </div>

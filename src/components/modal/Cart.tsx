@@ -72,7 +72,7 @@ const CreateProduct = () => {
               <Button
                 disabled={isDisabled || isOutOfStock}
                 onClick={() => navigate("/checkout")}
-                className={`flex-1 bg-red-500 hover:bg-red-600 cursor-pointer ${
+                className={`flex-1 bg-green-600 hover:bg-green-700 cursor-pointer ${
                   isDisabled || (isOutOfStock && "cursor-not-allowed")
                 }`}
               >

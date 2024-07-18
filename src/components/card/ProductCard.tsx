@@ -10,7 +10,7 @@ const ProductCard = ({ product }: { product: TProduct }) => {
   const formatRating = Number(rating.toFixed(1));
 
   return (
-    <div className="group relative overflow-hidden rounded-lg bg-gray-800 border-gray-700 border shadow-lg transition-all duration-300 hover:shadow-xl">
+    <div className="group relative overflow-hidden rounded-lg bg-white border-gray-700 border shadow-lg transition-all duration-300 hover:shadow-xl">
       <img
         src={image ? image : productImage}
         alt="Product Image"
@@ -20,17 +20,17 @@ const ProductCard = ({ product }: { product: TProduct }) => {
       />
       <div className="p-4">
         <div className="flex items-center justify-between">
-          <span className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-gray-400">
+          <span className="rounded-md bg-slate-300 px-2 py-1 text-xs font-medium text-black border-2">
             {category}
           </span>
-          <span className="rounded-md bg-primary px-2 py-1 text-xs font-medium text-gray-400">
+          <span className="rounded-md bg-slate-300 px-2 py-1 text-xs font-medium text-black border-2">
             {brand}
           </span>
-          <span className="text-sm font-medium text-gray-400">
+          <span className="text-sm text-black font-semibold">
             In Stock: {stockQuantity}
           </span>
         </div>
-        <h3 className="mt-2 text-lg text-white font-semibold line-clamp-1">
+        <h3 className="mt-2 text-lg text-black font-semibold line-clamp-1">
           {name}
         </h3>
         <div className="mt-2 flex items-center space-x-2">
@@ -57,7 +57,7 @@ const ProductCard = ({ product }: { product: TProduct }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="size-6 text-gray-400"
+                className="size-6 text-red-600"
               >
                 <path
                   fillRule="evenodd"
@@ -73,10 +73,10 @@ const ProductCard = ({ product }: { product: TProduct }) => {
           </span>
         </div>
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-lg font-bold text-gray-400">${price}</span>
+          <span className="text-lg font-bold text-black">${price}</span>
           <Link
             to={`/single-product/${_id}`}
-            className="px-4 py-2 bg-primary text-white font-semibold rounded-md hover:bg-primary-dark transition-all duration-300"
+            className="px-4 py-2 bg-slate-300 text-black font-semibold rounded-md hover:bg-primary-dark transition-all duration-300"
           >
             View Details
           </Link>

@@ -43,7 +43,7 @@ const ManageProducts = () => {
   };
 
   return (
-    <div className="bg-gray-900 py-8 min-h-[calc(100vh-240px)]">
+    <div className="bg-gray-300 py-8 min-h-[calc(100vh-240px)]">
       <Container>
         <div>
           <div className="flex items-center justify-between">
@@ -54,38 +54,34 @@ const ManageProducts = () => {
                 placeholder="Search products..."
                 value={searchTerm}
                 onChange={handleSearch}
-                className="pl-10 pr-4 py-2 rounded-md w-full md:w-64 bg-gray-800 text-white border-gray-700"
+                className="pl-10 pr-4 py-2 rounded-md w-full md:w-64 bg-white text-black border-gray-700"
               />
             </div>
             <CreateProduct />
           </div>
           <div className="py-8">
-            <Table className="bg-gray-800 text-white border-gray-700">
-              <TableHeader className="bg-gray-700">
+            <Table className="bg-slate-300 text-black border-gray-700">
+              <TableHeader className="bg-gray-200">
                 <TableRow>
-                  <TableHead className="w-[100px] text-gray-400">NO</TableHead>
-                  <TableHead className="text-gray-400">Name</TableHead>
-                  <TableHead className="text-gray-400">Price</TableHead>
-                  <TableHead className="text-right text-gray-400">
-                    Brand
-                  </TableHead>
-                  <TableHead className="text-right text-gray-400">
+                  <TableHead className="w-[100px] text-black">NO</TableHead>
+                  <TableHead className="text-black">Name</TableHead>
+                  <TableHead className="text-black">Price</TableHead>
+                  <TableHead className="text-right text-black">Brand</TableHead>
+                  <TableHead className="text-right text-black">
                     Category
                   </TableHead>
-                  <TableHead className="text-right text-gray-400">
-                    Stock
-                  </TableHead>
-                  <TableHead className="text-right text-gray-400">
+                  <TableHead className="text-right text-black">Stock</TableHead>
+                  <TableHead className="text-right text-black">
                     Ratings
                   </TableHead>
-                  <TableHead className="text-right text-gray-400">
+                  <TableHead className="text-right text-black">
                     Action
                   </TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody className="w-full">
                 {products?.data?.length < 1 ? (
-                  <p className="text-gray-400 px-5 py-2 w-[200px] font-bold flex items-center justify-center">
+                  <p className="text-black px-5 py-2 w-[200px] font-bold flex items-center justify-center">
                     No products found
                   </p>
                 ) : isLoading ? (
@@ -109,12 +105,12 @@ const ManageProducts = () => {
                     ) => (
                       <TableRow
                         key={index + 1}
-                        className="border-t border-gray-700 hover:bg-gray-700"
+                        className="border-t bg-white border-gray-700 hover:bg-slate-50"
                       >
-                        <TableCell className="font-medium text-gray-300">
+                        <TableCell className="font-medium text-black">
                           {index + 1}
                         </TableCell>
-                        <TableCell className="text-gray-300">
+                        <TableCell className="text-black">
                           <div className="flex items-center gap-4">
                             <img
                               src={image}
@@ -124,20 +120,20 @@ const ManageProducts = () => {
                             <span>{name}</span>
                           </div>
                         </TableCell>
-                        <TableCell className="text-gray-300">{price}</TableCell>
-                        <TableCell className="text-right text-gray-300">
+                        <TableCell className="text-black">{price}</TableCell>
+                        <TableCell className="text-right text-black">
                           {brand}
                         </TableCell>
-                        <TableCell className="text-right text-gray-300">
+                        <TableCell className="text-right text-black">
                           {category}
                         </TableCell>
-                        <TableCell className="text-right text-gray-300">
+                        <TableCell className="text-right text-black">
                           {stockQuantity}
                         </TableCell>
-                        <TableCell className="text-right text-gray-300">
+                        <TableCell className="text-right text-black">
                           {rating}
                         </TableCell>
-                        <TableCell className="text-right text-gray-300">
+                        <TableCell className="text-right text-black">
                           <EditProduct id={_id} />
                           <Button
                             onClick={() => handleDeleteProduct(_id)}

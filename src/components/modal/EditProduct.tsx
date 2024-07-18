@@ -126,7 +126,7 @@ const EditProduct = ({ id }: { id: string }) => {
           <FaEdit />
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-2xl bg-gray-800 border border-gray-700 text-white">
+      <DialogContent className="sm:max-w-2xl bg-gradient-to-r from-[#7a7a7a] to-[#505757]  border border-gray-700 text-white">
         <DialogTitle className="bg-gray-700 text-white"></DialogTitle>
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* image */}
@@ -138,7 +138,7 @@ const EditProduct = ({ id }: { id: string }) => {
               type="file"
               accept="image/*"
               onChange={handleImageChange}
-              className="bg-gray-900 text-gray-300 placeholder-gray-500 outline-none border-gray-800"
+              className="bg-gray-200 text-black placeholder-white outline-none border-black"
             />
             {errors.image && (
               <p className="text-red-500 text-sm mt-1">
@@ -163,7 +163,7 @@ const EditProduct = ({ id }: { id: string }) => {
               id="name"
               type="text"
               defaultValue={name}
-              className="bg-gray-900 text-gray-300 placeholder-gray-500 outline-none border-gray-800"
+              className="bg-gray-200 text-black placeholder-white outline-none border-black"
             />
             {errors.name && (
               <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
@@ -181,7 +181,7 @@ const EditProduct = ({ id }: { id: string }) => {
               id="price"
               type="number"
               defaultValue={price}
-              className="bg-gray-900 text-gray-300 placeholder-gray-500 outline-none border-gray-800"
+              className="bg-gray-200 text-black placeholder-white outline-none border-black"
             />
             {errors.price && (
               <p className="text-red-500 text-sm mt-1">
@@ -200,10 +200,10 @@ const EditProduct = ({ id }: { id: string }) => {
               rules={{ required: "Brand is required" }}
               render={({ field }) => (
                 <Select {...field} onValueChange={field.onChange}>
-                  <SelectTrigger className="bg-gray-800 text-white border border-gray-600">
+                  <SelectTrigger className="bg-gray-200 text-black placeholder-gray-600 border-black">
                     <SelectValue placeholder="Select a Brand" />
                   </SelectTrigger>
-                  <SelectContent className="bg-gray-700 border border-gray-600">
+                  <SelectContent className="bg-gray-500 border border-black">
                     <SelectGroup>
                       <SelectItem
                         className="text-white hover:bg-gray-600"
@@ -275,10 +275,10 @@ const EditProduct = ({ id }: { id: string }) => {
               rules={{ required: "Category is required" }}
               render={({ field }) => (
                 <Select {...field} onValueChange={field.onChange}>
-                  <SelectTrigger className="bg-gray-800 text-white border border-gray-600">
+                  <SelectTrigger className="bg-gray-200 text-black border border-black">
                     <SelectValue placeholder="Select a Category" />
                   </SelectTrigger>
-                  <SelectContent className="bg-gray-700 border border-gray-600">
+                  <SelectContent className="bg-gray-500 border border-black">
                     <SelectGroup>
                       <SelectItem
                         className="text-white hover:bg-gray-600"
@@ -339,7 +339,7 @@ const EditProduct = ({ id }: { id: string }) => {
               id="quantity"
               type="number"
               defaultValue={stockQuantity}
-              className="bg-gray-900 text-gray-300 placeholder-gray-500 outline-none border-gray-800"
+              className="bg-gray-200 text-black placeholder-white outline-none border-black"
             />
             {errors.quantity && (
               <p className="text-red-500 text-sm mt-1">
@@ -358,7 +358,7 @@ const EditProduct = ({ id }: { id: string }) => {
               id="description"
               defaultValue={description}
               rows={8}
-              className="bg-gray-900 text-gray-300 placeholder-gray-500 outline-none border-gray-800"
+              className="bg-gray-200 text-black placeholder-white outline-none border-black"
             />
             {errors.description && (
               <p className="text-red-500 text-sm mt-1">
